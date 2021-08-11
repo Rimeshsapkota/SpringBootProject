@@ -2,8 +2,8 @@ package com.rimesh.student;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.rimesh.student.user.entity.User;
-import com.rimesh.student.user.repository.UserRepository;
+import com.rimesh.student.entities.User;
+import com.rimesh.student.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -30,6 +30,11 @@ public class UserRepositoryTests {
         User savedUser = repo.save(user);
       User existUser = entityManager.find(User.class, savedUser.getId());
        assertThat(existUser.getEmail()).isEqualTo(user.getEmail());
-
     }
+//    @Test
+//    public void testFindUserBymail(){
+//        String email ="rita@gmail.com";
+//        User user = repo.findByEmail(email);
+//        assertThat(user).isNotNull();
+//    }
 }
