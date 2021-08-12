@@ -41,4 +41,22 @@ public class SignUpController {
         model.addAttribute("user", new User());
         return "student";
     }
+
+    @GetMapping("/nurserys")
+    public String nursery(Model model) {
+        model.addAttribute("user", new User());
+        return "nursery";
+    }
+
+    @GetMapping("/addStudents")
+    public String studentAdd(Model model) {
+        model.addAttribute("user", new User());
+        return "studentAdd";
+    }
+
+    @GetMapping("/addTeachers")
+    public String teacherAdd(Model model) {
+        model.addAttribute("user", new User());
+        return "teacherAdd";
+    }
 }
