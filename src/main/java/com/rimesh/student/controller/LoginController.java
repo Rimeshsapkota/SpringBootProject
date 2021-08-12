@@ -42,7 +42,7 @@ public class LoginController {
         return "client_login";
     }
 
-    @GetMapping("/list_users")
+    @GetMapping("/admin/services")
     public String list_users() {
         return "users";
     }

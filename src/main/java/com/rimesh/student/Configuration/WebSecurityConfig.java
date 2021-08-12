@@ -56,9 +56,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/login/client").permitAll()
                 .antMatchers("/javascript").permitAll()
                 .antMatchers("/users").permitAll()
-                .antMatchers("/list_users").permitAll()
+                .antMatchers("/admin/services").permitAll()
                 .anyRequest().authenticated().and().csrf().disable().formLogin().loginPage("/login")
-                .failureUrl("/login?error=true").defaultSuccessUrl("/list_users").usernameParameter("email")
+                .failureUrl("/login?error=true").defaultSuccessUrl("/admin/services").usernameParameter("email")
                 .passwordParameter("password").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/login").and().exceptionHandling().accessDeniedPage("/access-denied");
     }
