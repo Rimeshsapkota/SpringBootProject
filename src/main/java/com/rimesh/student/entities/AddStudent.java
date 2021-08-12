@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "addstudent")
+@Table(name="addstudent")
 @Getter
 @Setter
 public class AddStudent extends AbstractEntity {
