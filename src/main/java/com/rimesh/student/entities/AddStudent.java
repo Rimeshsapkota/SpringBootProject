@@ -3,6 +3,8 @@ package com.rimesh.student.entities;
 import com.rimesh.student.abstractEntity.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -11,6 +13,7 @@ import javax.persistence.Table;
 @Table(name="addstudent")
 @Getter
 @Setter
+@ToString
 public class AddStudent extends AbstractEntity {
 
     @Column(nullable = false)

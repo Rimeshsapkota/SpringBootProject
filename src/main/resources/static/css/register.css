@@ -1,5 +1,9 @@
-body{
-    background-image: url("../images/signup.jpeg");
+html,body{
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
 }
 .sub{
     border: 0;
@@ -7,4 +11,11 @@ body{
     margin: 2%;
     height: 40px;
     width: 100px;
+}
+.control-label{
+    color: white;
+}
+.register{
+    color: white;
+    text-align: center;
 }
